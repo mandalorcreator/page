@@ -1,1 +1,1 @@
-# write
+https://mandalorcreator.github.io/write/
