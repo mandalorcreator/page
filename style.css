@@ -76,8 +76,21 @@ align-items: center;
 justify-content: space-between;
 min-height: 70px;
 color: gray;
+flex-wrap: wrap;
 }
+.footer_text {
 
+display: flex;  
+margin: 10px; 
+}
+.ico_box {
+
+display: flex; 
+margin: 10px;  
+}
+.footer_ico {
+margin: 0px 10px 0px 10px;
+}
 /*-------оформление шапки------------*/
 .header {
     position: fixed;
@@ -120,6 +133,12 @@ color: gray;
 .menu__icon {
     display: none;
 }
+.footer_ico {
+height: auto;
+width: 100%;
+/* еще больше контроля с max-width */
+max-width: 30px;   
+}
 /*---------------------------------*/
 body._pc .menu__list > li:hover .menu__sub-list {
     opacity: 1;
@@ -136,11 +155,22 @@ body._touch .menu__link {
 }
 /*---------------------------------*/
 @media (min-width: 767px) {
-    .menu__list {
-        display: flex;
-        align-items: center;
-    }
-    .menu__list > li {
-        padding: 10px 0;
-    }
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+.menu__list > li {
+    padding: 10px 0;
+}
+.footer__container {
+
+flex-direction: column;
+}
+.ico_box {
+   
+}
+.footer_ico {
+margin: 0px 10px 0px 10px;
+flex-direction: column;
+}
 }
